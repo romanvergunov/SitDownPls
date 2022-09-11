@@ -1,0 +1,85 @@
+.site-hero {
+  position: relative;
+  margin-bottom: 70px;
+  padding-top: 32px;
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 20px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $eleventhColor;
+  }
+
+  &__slide {
+    height: auto;
+  }
+
+  &__content {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 82px;
+    height: 100%;
+    box-sizing: border-box;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_one {
+      background-image: url("../img/pictures/home-hero-one.jpg");
+    }
+
+    &_two {
+      background-image: url("../img/pictures/home-hero-two.jpg");
+    }
+
+    &_three {
+      background-image: url("../img/pictures/home-hero-three.jpg");
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 49px;
+    max-width: 587px;
+    font-weight: $boldFontWeight;
+    font-size: $tenthFontSize;
+    line-height: 65px;
+    color: $ninthColor;
+
+    &_one {
+      max-width: 496px;
+    }
+
+    &_two {
+      max-width: 466px;
+    }
+
+    &_three {
+      max-width: 587px;
+      color: $whiteColor;
+    }
+  }
+
+  &__button {
+    padding: 20px 48px;
+    cursor: pointer;
+
+    &_desktop {
+      display: none;
+    }
+  }
+}

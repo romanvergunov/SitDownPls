@@ -1,0 +1,685 @@
+/* stylelint-disable order/order */
+.header-top {
+  background-color: $seventhColor;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__group {
+    display: contents;
+  }
+
+  &__city {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select {
+    position: relative;
+  }
+
+  &__number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    outline: none;
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 100%;
+    text-decoration: none;
+    color: $thirdColor;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      z-index: -1;
+      background-color: $fourteenthColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &:hover,
+    &__call:hover {
+      color: $thirdLightColor;
+      fill: $thirdLightColor;
+    }
+
+    &:active,
+    &__call:active {
+      color: $thirdShadeColor;
+      fill: $thirdShadeColor;
+    }
+
+    &,
+    &__call {
+      z-index: 1;
+      color: $thirdColor;
+      fill: $thirdColor;
+      transition: color 0.3s, fill 0.3s ease-in-out;
+    }
+  }
+
+  .burger-top {
+    display: none;
+  }
+
+  &__nav {
+    width: 55%;
+
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__icons {
+    display: none;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  &__link {
+    position: relative;
+    z-index: 1;
+    outline: none;
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 100%;
+    text-decoration: none;
+    color: $ninthColor;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      right: -2px;
+      top: -2px;
+      bottom: -2px;
+      z-index: -1;
+      color: $primaryShadeColor;
+      background-color: $secondColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.focus-visible {
+      color: $primaryShadeColor;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+
+    &:active {
+      color: $primaryShadeColor;
+    }
+  }
+
+  &__region {
+    margin-right: 4px;
+    font-weight: $regularFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 130%;
+    color: $eleventhColor;
+  }
+}
+
+.choices {
+  position: relative;
+  z-index: 100;
+  margin-right: 26px;
+  margin-bottom: 0;
+  height: 34px;
+  font-weight: $regularFontWeight;
+  font-size: $primaryFontSize;
+  line-height: 120%;
+  color: $primaryColor;
+  background: none;
+  transition: color 0.3s ease-in-out;
+
+  &[data-type*="select-one"]::before {
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 18px;
+    border: none;
+    width: 1px;
+    height: 6px;
+    background-color: $primaryColor;
+    transform: rotate(45deg);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &[data-type*="select-one"]::after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 20px;
+    border: none;
+    width: 1px;
+    height: 6px;
+    background-color: $primaryColor;
+    transform: rotate(-45deg);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &[data-type*="select-one"].is-open::before {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+
+  &[data-type*="select-one"].is-open::after {
+    top: 25px;
+    transform: rotate(45deg);
+  }
+
+  &[data-type*="select-two"],
+  &[data-type*="select-three"],
+  &[data-type*="select-four"] {
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 130%;
+  }
+
+  &[data-type*="select-one"]:active::before,
+  &[data-type*="select-one"]:active::after {
+    background-color: $primaryShadeColor;
+  }
+
+  &[data-type*="select-one"]:hover::before,
+  &[data-type*="select-one"]:hover::after {
+    background-color: $primaryLightColor;
+  }
+
+  &__inner {
+    border: none;
+    padding-top: 5px;
+    padding-left: 0;
+    min-height: 41px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: border-color 0.3s, background-color 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 5px;
+      top: 7px;
+      bottom: 5px;
+      z-index: -1;
+      color: $primaryShadeColor;
+      background-color: $secondColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: $primaryLightColor;
+    }
+
+    &:active {
+      color: $primaryShadeColor;
+    }
+  }
+
+  &.focus-visible {
+    .choices__inner {
+      &::before {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__list--single {
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .is-open &__list-dropdown,
+  .is-open &__list[aria-expanded] {
+    top: 41px;
+    border-color: $seventhColor;
+    width: 84px;
+  }
+
+  &__list--dropdown &__item,
+  &__list[aria-expanded] &__item {
+    position: relative;
+    padding-left: 16px;
+    font-size: 14px;
+    color: $eleventhColor;
+  }
+
+  &__list--dropdown &__item--selectable,
+  &__list[aria-expanded] &__item--selectable {
+    padding-right: 0;
+  }
+
+  &__list--dropdown &__item--selectable.is-highlighted,
+  &__list[aria-expanded] &__item--selectable.is-highlighted {
+    background-color: $seventhColor;
+  }
+
+  .is-open &__list--dropdown {
+    border: 2px solid $seventhColor;
+  }
+}
+
+.header-middle {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 91px;
+  }
+
+  &__burger {
+    display: none;
+
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__logo {
+    z-index: 1;
+    margin-right: 141px;
+    outline-color: $primaryColor;
+    outline-offset: 5px;
+  }
+
+  &__nav {
+    width: 75%;
+  }
+
+  &__additional {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__icons {
+    display: none;
+  }
+
+  &__link {
+    position: relative;
+    z-index: 1;
+    outline: none;
+    font-weight: $regularFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 22px;
+    text-decoration: none;
+    color: $eleventhColor;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      z-index: -1;
+      color: $primaryShadeColor;
+      background-color: $secondColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &.focus-visible {
+      color: $eleventhColor;
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+
+    &:active {
+      color: $primaryShadeColor;
+    }
+  }
+}
+
+.header-bottom {
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+
+  &__search {
+    position: absolute;
+    left: 35px;
+    width: 16px;
+    height: 16px;
+    fill: $ninthColor;
+
+    &:active {
+      fill: $primaryColor;
+    }
+  }
+
+  &__button {
+    &::before {
+      left: 12px;
+      top: 5px;
+    }
+
+    &::after {
+      left: 12px;
+      top: 10px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 59.5%;
+  }
+
+  &__input {
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px 0 0 10px;
+    padding-left: 57px;
+    width: 100%;
+    min-height: 60px;
+    color: $eleventhColor;
+    background-color: $seventhColor;
+    transition: background-color 0.3s, border-color 0.3s ease-in-out;
+
+    &::placeholder {
+      font-weight: $regularFontWeight;
+      font-size: $primaryFontSize;
+      line-height: 120%;
+      color: $ninthColor;
+    }
+
+    &::placeholder:active {
+      color: $eleventhColor;
+    }
+
+    &.focus-visible {
+      border-color: $primaryColor;
+      background-color: $secondLightColor;
+    }
+
+    &:hover {
+      background-color: $eighthColor;
+    }
+
+    &:active + svg {
+      fill: $primaryColor;
+    }
+  }
+
+  .choices {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    max-width: 300px;
+    font-weight: $regularFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 22px;
+    background: transparent;
+
+    &[data-type*="select-one"]::before {
+      content: "";
+      position: absolute;
+      right: 34px;
+      top: 25px;
+      z-index: 3;
+      border: none;
+      width: 1px;
+      height: 10px;
+      background-color: $primaryColor;
+      transform: rotate(45deg);
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &[data-type*="select-one"]::after {
+      content: "";
+      position: absolute;
+      right: 41px;
+      top: 27px;
+      z-index: 3;
+      border: none;
+      width: 1px;
+      height: 10px;
+      background-color: $primaryColor;
+      transform: rotate(-45deg);
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &[data-type*="select-one"].is-open::before {
+      top: 23px;
+      transform: rotate(-45deg);
+    }
+
+    &[data-type*="select-one"].is-open::after {
+      top: 30px;
+      transform: rotate(45deg);
+    }
+
+    div[id$="choice-3"] {
+      display: none;
+    }
+
+    &__inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      border: 2px solid $seventhColor;
+      border-radius: 0 10px 10px 0;
+      padding-top: 9px;
+      padding-left: 32px;
+      max-width: 300px;
+      font-size: $primaryFontSize;
+      color: $primaryColor;
+      background-color: transparent;
+      transition: background-color 0.3s, border-color 0.3s ease-in-out;
+
+      &::before {
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 60px;
+        background-color: $secondLightColor;
+      }
+
+      &:hover {
+        border-color: $primaryColor;
+      }
+
+      &:active {
+        border-color: $primaryShadeColor;
+      }
+    }
+
+    &.focus-visible {
+      .choices__inner {
+        border-color: $primaryColor;
+        background-color: $secondLightColor;
+      }
+    }
+
+    &__list--dropdown,
+    &__list[aria-expanded] {
+      left: 0;
+      top: 55px;
+      z-index: 1;
+      border-top: none;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      width: 100%;
+      min-height: 194px;
+    }
+
+    .choices__list--dropdown .choices__list,
+    .choices__list[aria-expanded] .choices__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .choices__list--dropdown .choices__item,
+    .choices__list[aria-expanded] .choices__item {
+      padding: 5px;
+      padding-left: 30px;
+    }
+  }
+
+  &__cabinet {
+    outline: none;
+  }
+
+  &__cab {
+    margin-right: 32px;
+    width: 28px;
+    min-height: 28px;
+  }
+
+  &__shopping {
+    outline: none;
+  }
+
+  &__shop {
+    width: 41px;
+    min-height: 41px;
+  }
+
+  &__cabinet,
+  &__shopping {
+    position: relative;
+    z-index: 10;
+
+    &.focus-visible {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  &__cab,
+  &__shop {
+    position: relative;
+    fill: $primaryColor;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &__cab:hover,
+  &__shop:hover {
+    fill: $primaryLightColor;
+  }
+
+  &__cabinet.focus-visible svg,
+  &__shopping.focus-visible svg {
+    fill: $whiteColor;
+  }
+
+  &__cabinet::before,
+  &__shopping::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: $primaryLightColor;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__cabinet::before {
+    left: -5px;
+    right: 25px;
+    top: -5px;
+    bottom: -5px;
+  }
+
+  &__shopping::before {
+    left: -2px;
+    right: -5px;
+    top: 2px;
+    bottom: 2px;
+  }
+
+  &__cabinet.focus-visible::before,
+  &__shopping.focus-visible::before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  &__cab:active,
+  &__shop:active {
+    fill: $primaryShadeColor;
+  }
+}

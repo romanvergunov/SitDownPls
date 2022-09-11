@@ -1,0 +1,69 @@
+@media (max-width: 840px) {
+  .site-oxford {
+    &__container {
+      padding-right: 35px;
+      padding-left: 36px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .site-oxford {
+    &__title {
+      font-size: $ninthFontSize;
+    }
+
+    &__black {
+      font-size: $tenthFontSize;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .site-oxford {
+    margin-bottom: 70px;
+
+    &__container {
+      margin-bottom: 31px;
+      padding-right: 12px;
+      padding-left: 12px;
+      min-height: 210px;
+    }
+
+    &__pictures {
+      height: 210px;
+    }
+
+    &__picture {
+      height: 210px;
+    }
+
+    &__black {
+      font-size: $seventhFontSize;
+      line-height: 120%;
+    }
+
+    &__title {
+      font-size: $primaryFontSize;
+      line-height: 120%;
+    }
+
+    &__box {
+      min-height: 150px;
+      max-width: 200px;
+    }
+
+    &__button {
+      padding: 20px 85px;
+
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}

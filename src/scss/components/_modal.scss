@@ -1,0 +1,139 @@
+.dialog-window {
+  position: fixed;
+  z-index: 300;
+  display: none;
+  padding-right: 12px;
+  padding-left: 12px;
+  inset: 0;
+
+  &.dialog-visible {
+    display: flex;
+    animation: fade-in-from-none 0.3s ease-in-out forwards;
+
+    .dialog-window__content {
+      z-index: 301;
+      animation: slide-up-from-none 0.3s ease-in-out;
+    }
+  }
+
+  &.dialog-hidden {
+    animation: fade-out-from-block 0.3s ease-in-out forwards;
+
+    .dialog-window__content {
+      animation: slide-up-from-block 0.3s ease-in-out;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 300;
+    background-color: $eleventhColor;
+    opacity: 0.3;
+    cursor: pointer;
+    inset: 0;
+  }
+
+  &__image {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-weight: $regularFontWeight;
+    font-size: $eighthFontSize;
+    line-height: 100%;
+    color: $eleventhColor;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    width: 624px;
+    min-height: 421px;
+    background-color: hsl(0deg, 0%, 100%);
+    cursor: auto;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none;
+    transition: fill 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      z-index: -1;
+      background-color: $secondColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &.focus-visible svg {
+      fill: $primaryShadeColor;
+    }
+  }
+
+  &__icon {
+    fill: $ninthColor;
+    transition: fill 0.3s ease-in-out;
+
+    &:hover {
+      fill: $primaryColor;
+    }
+
+    &:active {
+      fill: $primaryShadeColor;
+    }
+  }
+}
+
+@keyframes fade-in-from-none {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-from-block {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up-from-none {
+  0% {
+    transform: translateY(20%);
+  }
+}
+
+@keyframes slide-up-from-block {
+  100% {
+    transform: translateY(-20%);
+  }
+}

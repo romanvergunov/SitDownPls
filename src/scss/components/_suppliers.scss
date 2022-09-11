@@ -1,0 +1,238 @@
+.cooperation-breadcrumb {
+  margin-bottom: 32px;
+  padding-top: 23px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 100%;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: 60px;
+      right: 0;
+      top: 3px;
+      bottom: 0;
+      width: 1px;
+      height: 10px;
+      background-color: $ninthColor;
+      transform: rotate(15deg);
+    }
+
+    &_active {
+      color: $primaryShadeColor;
+    }
+  }
+
+  &__link {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    color: $ninthColor;
+    transition: color 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      z-index: -1;
+      background-color: $primaryLightColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &.focus-visible {
+      color: $primaryShadeColor;
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+
+    &:active {
+      color: $primaryShadeColor;
+    }
+  }
+}
+
+.site-cooperation {
+  &__span {
+    margin-right: 3px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+
+    &_what {
+      margin-bottom: 15px;
+    }
+
+    &_benefits {
+      margin-bottom: 12px;
+    }
+
+    &_guarantees {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__suppliers {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    &_what {
+      margin: 0;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__what,
+  &__benefits,
+  &__guarantees {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.cooperation-what {
+  padding: 0;
+  max-width: 624px;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+    line-height: 150%;
+    background-position: top left;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+
+    &_one {
+      margin-bottom: 12px;
+      background-image: url("../img/svg/cooperation-icon-one.svg");
+    }
+
+    &_two {
+      margin-bottom: 12px;
+      background-image: url("../img/svg/cooperation-icon-two.svg");
+    }
+
+    &_three {
+      margin-bottom: 32px;
+      background-image: url("../img/svg/cooperation-icon-three.svg");
+    }
+  }
+}
+
+.cooperation-benefits {
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 35px;
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: $semiboldFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 22px;
+    color: $thirdColor;
+  }
+}
+
+.cooperation-guarantees {
+  margin: 0;
+  padding: 0;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 840px;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__number {
+    margin-right: 12px;
+    font-weight: $boldFontWeight;
+    font-size: $primaryFontSize;
+    line-height: 180%;
+    color: $thirdColor;
+  }
+}
+
+.cooperation-term {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  min-height: 116px;
+  max-width: 624px;
+  background-image: url("../img/svg/cooperation-icon-pen.svg");
+  background-position: top left;
+  background-size: 77px 116px;
+  background-repeat: no-repeat;
+
+  &__text {
+    padding-left: 108px;
+    font-weight: $regularFontWeight;
+    font-size: $seventhFontSize;
+    line-height: 150%;
+    color: $eleventhColor;
+  }
+}

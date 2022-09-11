@@ -1,0 +1,244 @@
+.site-data {
+  margin-bottom: 70px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    margin-right: 32px;
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 16px;
+    max-width: 624px;
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 19px;
+    color: $tenthColor;
+  }
+
+  &__marker {
+    outline: none;
+    border: 2px solid $thirdColor;
+    border-radius: 100%;
+    width: 14px;
+    height: 16px;
+    background-color: transparent;
+    transition: background-color 0.3s, fill 0.3s, border-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    svg {
+      position: relative;
+      left: -3px;
+      display: block;
+      margin: 0 auto;
+      fill: $thirdColor;
+    }
+
+    &.focus-visible {
+      background-color: $thirdColor;
+    }
+
+    &.focus-visible svg {
+      fill: $whiteColor;
+    }
+
+    &:hover {
+      background-color: $thirdColor;
+    }
+
+    &:hover svg {
+      fill: $whiteColor;
+    }
+  }
+
+  &__accept,
+  &__link {
+    font-weight: $regularFontWeight;
+    font-size: $fourthFontSize;
+    line-height: 19px;
+    text-decoration: none;
+  }
+
+  &__name,
+  &__tel,
+  &__email {
+    position: relative;
+    margin-bottom: 26px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-left: 18px;
+    width: 96%;
+    height: 54px;
+    background-color: $seventhColor;
+    transition: background-color 0.3s ease-in-out;
+
+    &.focus-visible {
+      border-color: $primaryColor;
+      background-color: $secondLightColor;
+    }
+
+    &:hover {
+      background-color: $eighthColor;
+    }
+  }
+
+  &__name::placeholder,
+  &__tel::placeholder,
+  &__email::placeholder {
+    color: $ninthColor;
+  }
+
+  &__name.just-validate-error-field,
+  &__tel.just-validate-error-field,
+  &__email.just-validate-error-field,
+  &__label.just-validate-error-label {
+    border: 1px solid $fourthColor;
+  }
+
+  &__name.just-validate-success-field,
+  &__tel.just-validate-success-field,
+  &__email.just-validate-success-field,
+  &__label.just-validate-succes-label {
+    border-color: $fifthColor;
+  }
+
+  &__name + .just-validate-error-label,
+  &__tel + .just-validate-error-label,
+  &__email + .just-validate-error-label,
+  &__label + .just-validate-error-label {
+    position: absolute;
+    top: -18px;
+    padding-left: 18px;
+    font-weight: $regularFontWeight;
+    font-size: $thirdFontSize;
+    line-height: 16px;
+  }
+
+  &__label + .just-validate-error-label {
+    top: -12px;
+  }
+
+  &__validate {
+    position: relative;
+  }
+
+  &__button {
+    margin-bottom: 12px;
+    padding: 18px 32px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    position: absolute;
+    clip-path: inset(100%);
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+
+    &:checked + .site-data__text::before {
+      border-color: $primaryColor;
+      background-image: url("../img/svg/home-data-check.svg");
+      background-color: $primaryColor;
+    }
+
+    &.focus-visible + .site-data__text {
+      outline-color: $primaryColor;
+    }
+  }
+
+  &__text {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 22px;
+    font-size: $fourthFontSize;
+    line-height: 19px;
+    transition: outline-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: inline-block;
+      border: 1px solid $ninthColor;
+      border-radius: 2px;
+      width: 14px;
+      height: 14px;
+      background-position: center;
+      background-size: 11px 9px;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      transition-property: border-color, background-color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &__link {
+    outline: none;
+    text-decoration: underline;
+    color: $primaryColor;
+    transition: color 0.3s ease-in-out;
+
+    &.focus-visible {
+      color: $primaryLightColor;
+    }
+
+    &:hover {
+      color: $primaryShadeColor;
+    }
+
+    &:active {
+      color: $primaryLightColor;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    min-height: 383px;
+    max-width: 624px;
+    background-image: url("../img/pictures/home-data-illustration.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.tippy-box[data-theme~="one"] {
+  margin-bottom: 5px;
+  border-color: $eleventhColor;
+  border-radius: 0;
+  padding: 5px;
+  min-height: 60px;
+  font-weight: $regularFontWeight;
+  font-size: 9px;
+  line-height: 14px;
+  text-align: center;
+  color: $whiteColor;
+  background-size: cover;
+  background-color: $eleventhColor;
+}
+
+.tippy-box[data-theme~="one"] > .tippy-arrow::before {
+  transform: scale(1.5);
+}

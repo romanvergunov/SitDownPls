@@ -1,0 +1,42 @@
+@mixin checkButton {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    width: 1px;
+    height: 6px;
+    background-color: $primaryColor;
+    transform: rotate(45deg);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 1px;
+    height: 6px;
+    background-color: $primaryColor;
+    transform: rotate(-45deg);
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &.focus-visible::before,
+  &.focus-visible::after {
+    background-color: $primaryShadeColor;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $primaryLightColor;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $primaryShadeColor;
+  }
+}

@@ -1,0 +1,647 @@
+/* stylelint-disable order/order */
+@media (max-width: 1150px) {
+  .site-header {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 58px;
+      width: 100%;
+      min-height: 50px;
+      background-color: $seventhColor;
+    }
+  }
+
+  .container {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .header-top {
+    background-color: transparent;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 59px;
+    }
+
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 47px;
+    }
+
+    &__nav {
+      width: 100%;
+    }
+
+    &__list {
+      width: 83%;
+    }
+
+    &__icons {
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      height: auto;
+    }
+
+    &__cabinet {
+      outline: none;
+    }
+
+    &__cab {
+      margin-right: 32px;
+      width: 28px;
+      min-height: 28px;
+    }
+
+    &__shopping {
+      outline: none;
+    }
+
+    &__shop {
+      width: 41px;
+      min-height: 41px;
+    }
+
+    &__cabinet,
+    &__shopping {
+      position: relative;
+      z-index: 10;
+
+      &.focus-visible {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    &__cab,
+    &__shop {
+      position: relative;
+      fill: $primaryColor;
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &__cab:hover,
+    &__shop:hover {
+      fill: $primaryLightColor;
+    }
+
+    &__cabinet.focus-visible svg,
+    &__shopping.focus-visible svg {
+      fill: $whiteColor;
+    }
+
+    &__cabinet::before,
+    &__shopping::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $primaryLightColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &__cabinet::before {
+      left: -5px;
+      right: 25px;
+      top: -5px;
+      bottom: -5px;
+    }
+
+    &__shopping::before {
+      left: -2px;
+      right: -5px;
+      top: 2px;
+      bottom: 2px;
+    }
+
+    &__cabinet.focus-visible::before,
+    &__shopping.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &__cab:active,
+    &__shop:active {
+      fill: $primaryShadeColor;
+    }
+  }
+
+  .header-middle {
+    &__container {
+      min-height: 96px;
+    }
+
+    &__logo {
+      flex-shrink: 0;
+      margin-right: 7%;
+    }
+  }
+
+  .header-bottom {
+    &__icons {
+      display: none;
+      align-items: center;
+
+      &_mobile {
+        display: flex;
+      }
+    }
+
+    &__cabinet,
+    &__shopping {
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: flex;
+      }
+
+      &_tablet {
+        display: none;
+      }
+    }
+
+    &__form {
+      width: 75%;
+    }
+
+    &__button {
+      right: 33px;
+      width: 32px;
+      height: 32px;
+
+      &::before {
+        left: 14px;
+        top: 7px;
+      }
+
+      &::after {
+        left: 14px;
+        top: 12px;
+      }
+    }
+
+    .choices {
+      margin-right: 0;
+
+      &__inner {
+        padding-top: 4px;
+        padding-left: 29px;
+      }
+    }
+
+    .choices[data-type*="select-one"] .choices__inner {
+      padding-bottom: 10.5px;
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  .container {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+
+  .header-top {
+    &__group {
+      margin-bottom: 17px;
+      min-height: 19px;
+    }
+
+    &__info {
+      margin-bottom: 14px;
+    }
+
+    &__nav {
+      width: 100%;
+    }
+
+    &__list {
+      width: 100%;
+    }
+
+    &__icons {
+      display: none;
+    }
+  }
+
+  .header-bottom {
+    &__icons {
+      display: flex;
+      align-items: center;
+    }
+
+    &__cabinet,
+    &__shopping {
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: none;
+      }
+
+      &_tablet {
+        display: flex;
+      }
+    }
+
+    .choices {
+      max-width: 189px;
+
+      &__inner {
+        max-width: 189px;
+      }
+
+      .choices__list--dropdown .choices__list,
+      .choices__list[aria-expanded] .choices__list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .header-middle {
+    position: relative;
+
+    &__container {
+      justify-content: space-between;
+      min-height: 92px;
+    }
+
+    &__burger {
+      display: flex;
+      margin-right: 12%;
+
+      &_mobile {
+        display: none;
+      }
+    }
+
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__nav {
+      display: none;
+
+      &.burger-active {
+        display: flex;
+      }
+    }
+
+    &__list {
+      position: relative;
+      display: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 72px;
+        bottom: 20px;
+        width: 161px;
+        min-height: 112px;
+        background-image: url("../img/svg/home-burger-elephant.svg");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__list.burger-active {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 150;
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      padding-top: 92px;
+      padding-bottom: 20px;
+      padding-left: 72px;
+      width: auto;
+      background-color: $whiteColor;
+      gap: 50px;
+    }
+
+    &__icons {
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      height: auto;
+    }
+
+    &__cabinet {
+      outline: none;
+    }
+
+    &__cab {
+      margin-right: 32px;
+      width: 28px;
+      min-height: 28px;
+    }
+
+    &__shopping {
+      outline: none;
+    }
+
+    &__shop {
+      width: 41px;
+      min-height: 41px;
+    }
+
+    &__cabinet,
+    &__shopping {
+      position: relative;
+      z-index: 10;
+
+      &.focus-visible {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    &__cab,
+    &__shop {
+      position: relative;
+      fill: $primaryColor;
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &__cab:hover,
+    &__shop:hover {
+      fill: $primaryLightColor;
+    }
+
+    &__cabinet.focus-visible svg,
+    &__shopping.focus-visible svg {
+      fill: $whiteColor;
+    }
+
+    &__cabinet::before,
+    &__shopping::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $primaryLightColor;
+      opacity: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &__cabinet::before {
+      left: -5px;
+      right: 25px;
+      top: -5px;
+      bottom: -5px;
+    }
+
+    &__shopping::before {
+      left: -2px;
+      right: -5px;
+      top: 2px;
+      bottom: 2px;
+    }
+
+    &__cabinet.focus-visible::before,
+    &__shopping.focus-visible::before {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &__cab:active,
+    &__shop:active {
+      fill: $primaryShadeColor;
+    }
+  }
+
+  .burger-middle {
+    position: relative;
+    z-index: 200;
+    flex-shrink: 0;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: transparent;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    transition: outline-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &__line {
+      $lineHeight: 3px;
+
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      border-radius: 4px;
+      width: 100%;
+      height: $lineHeight;
+      background-color: $primaryColor;
+
+      &_first,
+      &_fourth {
+        transition-property: opacity, background-color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+
+      &_first {
+        top: 0;
+      }
+
+      &_second,
+      &_third {
+        top: calc(50% - calc($lineHeight / 2));
+        transition-property: transform, background-color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+
+      &_fourth {
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    .burger-active &__line_first,
+    .burger-active &__line_fourth {
+      opacity: 0;
+    }
+
+    .burger-active &__line_second {
+      transform: rotate(45deg);
+    }
+
+    .burger-active &__line_third {
+      transform: rotate(-45deg);
+    }
+
+    &.focus-visible {
+      outline-color: $secondColor;
+    }
+
+    @media screen and (any-hover: hover) {
+      &:hover &__line {
+        background-color: $primaryLightColor;
+      }
+    }
+
+    &:active &__line {
+      background-color: $primaryShadeColor;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .header-middle {
+    &__list.burger-active {
+      padding-left: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .site-header {
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 143px;
+      border-top: 1px solid $seventhColor;
+      border-bottom: 1px solid $seventhColor;
+      width: 100%;
+      min-height: 50px;
+    }
+  }
+
+  .header-top {
+    &__logo {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 11px;
+      outline-offset: 0;
+      min-height: 50px;
+    }
+
+    &__group {
+      margin-bottom: 0;
+    }
+
+    &__number {
+      width: max-content;
+    }
+
+    &__city {
+      margin-bottom: 10px;
+    }
+
+    &__nav {
+      &_mobile {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        display: flex;
+      }
+    }
+
+    &__list {
+      display: none;
+
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile.burger-active {
+        position: absolute;
+        top: 433px;
+        bottom: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 16px;
+        width: 100%;
+        min-height: 108px;
+        background-color: $seventhColor;
+      }
+    }
+
+    &__info {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+  .header-middle {
+    margin-bottom: 19px;
+
+    &__container {
+      min-height: 44px;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__list {
+      &::before {
+        display: none;
+      }
+
+      &.burger-active {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding-top: 52px;
+        min-height: 337px;
+      }
+    }
+  }
+
+  .header-bottom {
+    &__container {
+      display: block;
+    }
+
+    &__form {
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    &__input {
+      border-radius: 10px;
+    }
+
+    .choices {
+      max-width: 100%;
+
+      &__inner {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+}

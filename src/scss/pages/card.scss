@@ -1,0 +1,10 @@
+/* stylelint-disable scss/at-import-no-partial-leading-underscore */
+@import "../config/_variables";
+@import "../config/normalize";
+@import "../config/fonts";
+@import "../mixins/_mixins";
+@import "../components/global";
+@import "../components/header";
+@import "../components/card-product";
+@import "../components/footer";
+@import "../media/pages/breakpoints-card"

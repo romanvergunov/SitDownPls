@@ -1,0 +1,852 @@
+<section class="site-sofas">
+  <div class="container">
+    <nav aria-label="Хлебные крошки" class="sofas-breadcrumb site-sofas__breadcrumb">
+      <ul class="sofas-breadcrumb__list">
+          <li class="sofas-breadcrumb__item"><a class="sofas-breadcrumb__link" href="index.html">Главная</a></li>
+          <li class="sofas-breadcrumb__item"><a class="sofas-breadcrumb__link" href="catalog.html">Каталог</a></li>
+          <li class="sofas-breadcrumb__item"><a class="sofas-breadcrumb__link" href="catalog.html">Диваны</a></li>
+          <li class="sofas-breadcrumb__item sofas-breadcrumb__item_active"><a aria-current="page">Прямые диваны</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container site-sofas__container">
+    <div class="sofas-left site-sofas__left">
+      <div class="sofas-left__desktop">
+        <h2 class="sofas-left__title">
+          Фильтровать&nbsp;по:
+        </h2>
+      <div class="left-content sofas-left__content">
+        <h3 class="left-content__title">
+          Категория
+        </h3>
+        <ul class="sofas-list left-content__list">
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes" checked>
+              <span class="left-content__name">Диваны</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="two" value="yes">
+              <span class="left-content__name">Кресла</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="three" value="yes">
+              <span class="left-content__name">Пуфы</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="four" value="yes">
+              <span class="left-content__name">Кровати</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="five" value="yes">
+              <span class="left-content__name">Тумбы</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="six" value="yes">
+              <span class="left-content__name">Комоды</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="seven" value="yes">
+              <span class="left-content__name">Стулья</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="eight" value="yes">
+              <span class="left-content__name">Столы</span>
+            </label>
+          </li>
+          <li class="sofas-item left-content__item">
+            <label class="sofas-label left-content__label">
+              <input class="sofas-input left-content__input" type="checkbox" name="nine" value="yes">
+              <span class="left-content__name">Аксессуары</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="left-content sofas-left__content">
+        <h2 class="left-content__title left-content__price">
+          Цена
+        </h2>
+        <div class="wrapper">
+            <div class="wrapper__box">
+              <div class="range-wrapper wrapper__range">
+                <div class="range-wrapper__inner range-wrapper__inner_from">
+                  <label class="range-wrapper__text" for="field-from">от</label>
+                  <input
+                    class="range-wrapper__field range-wrapper__field_first"
+                    id="field-from"
+                    type="number"
+                    name="numberFieldFrom"
+                    min="0"
+                    max="150000"
+                    aria-label="Enter the initial number"
+                  >
+                </div>
+                <div class="range-wrapper__inner range-wrapper__inner_to">
+                  <label class="range-wrapper__text" for="field-to">до</label>
+                  <input
+                    class="range-wrapper__field range-wrapper__field_second"
+                    id="field-to"
+                    type="number"
+                    name="numberFieldTo"
+                    min="0"
+                    max="150000"
+                    aria-label="Enter a finite number"
+                  >
+                </div>
+              </div>
+              <div class="wrapper__slider"></div>
+            </div>
+          </div>
+        </div>
+        <div class="left-content sofas-left__content">
+          <h3 class="left-content__title">
+            Скидка
+          </h3>
+          <ul class="sofas-list left-content__list">
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Более 5 000</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="two" value="yes">
+                <span class="left-content__name">Менее 5 000</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="three" value="yes" checked>
+                <span class="left-content__name">Не важно</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="left-content sofas-left__content sofas-left__content_last">
+          <h3 class="left-content__title">
+            Цвет
+          </h3>
+          <ul class="sofas-list left-content__list">
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Коричневый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Черный</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Бежевый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Серый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Белый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Синий</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes" checked>
+                <span class="left-content__name">Оранжевый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Желтый</span>
+              </label>
+            </li>
+            <li class="sofas-item left-content__item">
+              <label class="sofas-label left-content__label">
+                <input class="sofas-input left-content__input" type="checkbox" name="one" value="yes">
+                <span class="left-content__name">Зеленый</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="sofas-oxford site-sofas__oxford">
+          <div class="sofas-oxford__picture"></div>
+          <div class="sofas-oxford__content">
+            <h2 class="sofas-oxford__title">
+              Оксфорд 1950
+            </h2>
+            <span class="sofas-oxford__text">
+              Новая коллекция изысканных кресел
+            </span>
+            <a class="sofas-oxford__link sofas-oxford__link_desktop" href="catalog.html">
+              <span class="sofas-oxford__catalog">
+                В каталог
+              </span>
+              <span class="btnNext sofas-oxford__arrow"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sofas-right site-sofas__right">
+      <h1 class="sofas-right__title">
+        Каталог
+      </h1>
+    <div class="sofas-mobile site-sofas__mobile">
+      <h2 class="sofas-mobile__title">
+        Фильтры:
+      </h2>
+      <ul class="mobile-content sofas-mobile__content">
+        <li class="mobile-content__subcontent">
+          <button class="mobile-button sofas-mobile__category">
+            <span class="mobile-content__title">
+              Категория
+            </span>
+            <svg class="mobile-jackdaw mobile-content__jackdaw" width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="img/sprites/sprite.svg#catalog-dropdown"/>
+            </svg>
+          </button>
+          <ul class="mobile-list mobile-content__list">
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes" checked>
+                <span class="mobile-content__name">Диваны</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="two" value="yes">
+                <span class="mobile-content__name">Кресла</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="three" value="yes">
+                <span class="mobile-content__name">Пуфы</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="four" value="yes">
+                <span class="mobile-content__name">Кровати</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="five" value="yes">
+                <span class="mobile-content__name">Тумбы</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="six" value="yes">
+                <span class="mobile-content__name">Комоды</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="seven" value="yes">
+                <span class="mobile-content__name">Стулья</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="eight" value="yes">
+                <span class="mobile-content__name">Столы</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="nine" value="yes">
+                <span class="mobile-content__name">Аксессуары</span>
+              </label>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-content__subcontent">
+          <button class="mobile-button mobile-content__price">
+            <span class="mobile-content__title">
+              Цена
+            </span>
+            <svg class="mobile-jackdaw mobile-content__jackdaw" width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="img/sprites/sprite.svg#catalog-dropdown"/>
+            </svg>
+          </button>
+          <ul class="mobile-list range-wrapper">
+            <li class="range-wrapper__inner range-wrapper__inner_from">
+              <label class="range-wrapper__text" for="field-from">от</label>
+                <input
+                  class="range-wrapper__field range-wrapper__field_first"
+                  id="field-from2"
+                  placeholder="2000"
+                  type="number"
+                  name="numberFieldFrom"
+                  min="0"
+                  max="150000"
+                  aria-label="Enter the initial number"
+                >
+            </li>
+            <li class="range-wrapper__inner range-wrapper__inner_to">
+              <label class="range-wrapper__text" for="field-to">до</label>
+                <input
+                  class="range-wrapper__field range-wrapper__field_second"
+                  id="field-to2"
+                  placeholder="150&nbsp;000"
+                  type="number"
+                  name="numberFieldTo"
+                  min="0"
+                  max="150000"
+                  aria-label="Enter a finite number"
+                >
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-content__subcontent">
+          <button class="mobile-button mobile-content__discount">
+            <span class="mobile-content__title">
+              Скидка
+            </span>
+            <svg class="mobile-jackdaw mobile-content__jackdaw" width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="img/sprites/sprite.svg#catalog-dropdown"/>
+            </svg>
+          </button>
+          <ul class="mobile-list sofas-list mobile-content__list">
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Более 5 000</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="two" value="yes">
+                <span class="mobile-content__name">Менее 5 000</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="three" value="yes" checked>
+                <span class="mobile-content__name">Не важно</span>
+              </label>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-content__subcontent">
+          <button class="mobile-button mobile-content__color">
+            <span class="mobile-content__title">
+              Цвет
+            </span>
+            <svg class="mobile-jackdaw mobile-content__jackdaw" width="13" height="8" viewBox="0 0 13 8">
+              <use xlink:href="img/sprites/sprite.svg#catalog-dropdown"/>
+            </svg>
+          </button>
+          <ul class="mobile-list sofas-list mobile-content__list">
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Коричневый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Черный</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Бежевый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Серый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Белый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Синий</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes" checked>
+                <span class="mobile-content__name">Оранжевый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Желтый</span>
+              </label>
+            </li>
+            <li class="sofas-item mobile-content__item">
+              <label class="sofas-label mobile-content__label">
+                <input class="sofas-input mobile-content__input" type="checkbox" name="one" value="yes">
+                <span class="mobile-content__name">Зеленый</span>
+              </label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      <div class="swiper sofas-right__slider">
+        <ul class="swiper-wrapper sofas-right__list">
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">5,0</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-one-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-one-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-one.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-one.png">
+                <img class="content-picture content-picture_one" src="img/pictures/catalog-catalog-one.png" alt="На картинке изображен кожаный диван “R-94”" height="82" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван кожаный</span><span class="content-subname">“R-94”</span>
+                </h3>
+                <span class="content-price">
+                  94&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,9</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-two-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-two-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-two.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-two.png">
+                <img class="content-picture content-picture_two" src="img/pictures/catalog-catalog-two.png" alt="На картинке изображен апартековый диван “T-75”" height="101" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван апартековый</span><span class="content-subname">“T-75”</span>
+                </h3>
+                <span class="content-price">
+                  69&nbsp;990 руб
+                </span>
+                <button class="content-button button-border content-button">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,8</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-three-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-three-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-three.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-three.png">
+                <img class="content-picture content-picture_three" src="img/pictures/catalog-catalog-three.png" alt="На картинке изображен тканевый диван “D-31”" height="103" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван тканевый</span><span class="content-subname">“D-31”</span>
+                </h3>
+                <span class="content-price">
+                  28&nbsp;490 руб
+                </span>
+                <a href="card.html" class="content-button button-border content-button">
+                  Купить
+                </a>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,8</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-four-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-four-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-four.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-four.png">
+                <img class="content-picture content-picture_four" src="img/pictures/catalog-catalog-four.png" alt="На картинке изображен велюровый диван “Y-68”" height="125" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван велюровый</span><span class="content-subname">“Y-68”</span>
+                </h3>
+                <span class="content-price">
+                  22&nbsp;990 руб
+                </span>
+                <button class="content-button button-border content-button">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+          <article class="content-article">
+            <span class="content-rating">4,8</span>
+            <picture class="content-pictures">
+              <source srcset="img/pictures/catalog-catalog-five-320.webp" type="image/webp" media="(max-width: 500px)">
+              <source srcset="img/pictures/catalog-catalog-five-320.png" media="(max-width: 500px)">
+              <source srcset="img/pictures/catalog-catalog-five.webp" type="image/webp">
+              <source srcset="img/pictures/catalog-catalog-five.png">
+              <img class="content-picture content-picture_five" src="img/pictures/catalog-catalog-five.png" alt="На картинке изображен диван из шинила “W-95”" height="117" loading="lazy">
+            </picture>
+            <div class="content-box">
+              <h3 class="content-title">
+                <span class="content-name">Диван из&nbsp;шинила</span><span class="content-subname">“W-95”</span>
+              </h3>
+              <span class="content-price">
+                22&nbsp;990 руб
+              </span>
+              <button class="content-button button-border content-button">
+                Купить
+              </button>
+            </div>
+          </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,8</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-six-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-six-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-six.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-six.png">
+                <img class="content-picture content-picture_six" src="img/pictures/catalog-catalog-six.png" alt="На картинке изображен флоковый диван “G-41”" height="117" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван флоковый</span><span class="content-subname">“G-41”</span>
+                </h3>
+                <span class="content-price">
+                  17&nbsp;990 руб
+                </span>
+                <button class="content-button button-border content-button">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,8</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-seven-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-seven-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-seven.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-seven.png">
+                <img class="content-picture content-picture_seven" src="img/pictures/catalog-catalog-seven.png" alt="На картинке изображен шиниловый диван “V-43”" height="130" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван шиниловый</span><span class="content-subname">“V-43”</span>
+                </h3>
+                <span class="content-price">
+                  19&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,7</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-eight-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eight-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eight.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-eight.png">
+                <img class="content-picture content-picture_eight" src="img/pictures/catalog-catalog-eight.png" alt="На картинке изображен велюровый диван “S-99”" height="124" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван велюровый</span><span class="content-subname">“S-99”</span>
+                </h3>
+                <span class="content-price">
+                  19&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,7</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-nine-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-nine-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-nine.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-nine.png">
+                <img class="content-picture content-picture_nine" src="img/pictures/catalog-catalog-nine.png" alt="На картинке изображен диван из кожзама “F-85”" height="125" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван из кожзама</span><span class="content-subname">“F-85”</span>
+                </h3>
+                <span class="content-price">
+                  26&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,6</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-ten-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-ten-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-ten.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-ten.png">
+                <img class="content-picture content-picture_ten" src="img/pictures/catalog-catalog-ten.png" alt="На картинке изображен флоковый диван “H-64”" height="130" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван флоковый</span><span class="content-subname">“H-64”</span>
+                </h3>
+                <span class="content-price">
+                  25&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,6</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-eleven-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eleven-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eleven.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-eleven.png">
+                <img class="content-picture content-picture_eleven" src="img/pictures/catalog-catalog-eleven.png" alt="На картинке изображен флоковый диван “H-58”" height="133" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван флоковый</span><span class="content-subname">“H-58”</span>
+                </h3>
+                <span class="content-price">
+                  23&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,6</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-twelve-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-twelve-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-twelve.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-twelve.png">
+                <img class="content-picture content-picture_twelve" src="img/pictures/catalog-catalog-twelve.png" alt="На картинке изображен диван из кожзама “R-43”" height="105" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван из кожзама</span><span class="content-subname">“R-43”</span>
+                </h3>
+                <span class="content-price">
+                  33&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,6</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-thirteen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-thirteen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-thirteen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-thirteen.png">
+                <img class="content-picture content-picture_thirteen" src="img/pictures/catalog-catalog-thirteen.png" alt="На картинке изображен диван из шинила “С-42”" height="127" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван из шинила</span><span class="content-subname">“С-42”</span>
+                </h3>
+                <span class="content-price">
+                  18&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,6</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-fourteen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-fourteen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-fourteen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-fourteen.png">
+                <img class="content-picture content-picture_fourteen" src="img/pictures/catalog-catalog-fourteen.png" alt="На картинке изображен велюровый диван “U-58”" height="92" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван велюровый</span><span class="content-subname">“U-58”</span>
+                </h3>
+                <span class="content-price">
+                  21&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,5</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-fifteen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-fifteen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-fifteen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-fifteen.png">
+                <img class="content-picture content-picture_fifteen" src="img/pictures/catalog-catalog-fifteen.png" alt="На картинке изображен флоковый диван “F-41”" height="106" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван флоковый</span><span class="content-subname">“F-41”</span>
+                </h3>
+                <span class="content-price">
+                  17&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,5</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-sixteen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-sixteen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-sixteen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-sixteen.png">
+                <img class="content-picture content-picture_sixteen" src="img/pictures/catalog-catalog-sixteen.png" alt="На картинке изображен велюровый диван “R-85”" height="105" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван велюровый</span><span class="content-subname">“R-85”</span>
+                </h3>
+                <span class="content-price">
+                  34&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,5</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-seventeen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-seventeen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-seventeen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-seventeen.png">
+                <img class="content-picture content-picture_seventeen" src="img/pictures/catalog-catalog-seventeen.png" alt="На картинке изображен велюровый диван “S-44”" height="105" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван велюровый</span><span class="content-subname">“S-44”</span>
+                </h3>
+                <span class="content-price">
+                  19&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="swiper-slide content-item sofas-right__item">
+            <article class="content-article">
+              <span class="content-rating">4,4</span>
+              <picture class="content-pictures">
+                <source srcset="img/pictures/catalog-catalog-eighteen-320.webp" type="image/webp" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eighteen-320.png" media="(max-width: 500px)">
+                <source srcset="img/pictures/catalog-catalog-eighteen.webp" type="image/webp">
+                <source srcset="img/pictures/catalog-catalog-eighteen.png">
+                <img class="content-picture content-picture_eighteen" src="img/pictures/catalog-catalog-eighteen.png" alt="На картинке изображен диван из шинила “С-80”" height="130" loading="lazy">
+              </picture>
+              <div class="content-box">
+                <h3 class="content-title">
+                  <span class="content-name">Диван из шинила</span><span class="content-subname">“С-80”</span>
+                </h3>
+                <span class="content-price">
+                  20&nbsp;990 руб
+                </span>
+                <button class="content-button button-border">
+                  Купить
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination sofas-right__pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>

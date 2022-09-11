@@ -1,0 +1,20 @@
+.site-oxford {
+  position: relative;
+  margin-bottom: 65px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 605px;
+  }
+
+  &__button {
+    &_desktop {
+      display: block;
+    }
+
+    &_mobile {
+      display: none;
+    }
+  }
+}

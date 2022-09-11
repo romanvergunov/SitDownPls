@@ -1,0 +1,47 @@
+.site-high {
+  margin-bottom: 70px;
+
+  &__item {
+    display: none;
+    background-color: $seventhColor;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    padding: 20px 35px;
+  }
+}
+
+.high-content {
+  &__name {
+    display: flex;
+  }
+
+  &__subname {
+    display: flex;
+  }
+
+  &__pictures {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  &__picture {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.ui-card-active {
+  display: grid;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.ui-button-hide {
+  display: none;
+}

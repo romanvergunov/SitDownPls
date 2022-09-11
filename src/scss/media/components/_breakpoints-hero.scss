@@ -1,0 +1,115 @@
+/* stylelint-disable order/order */
+@media (max-width: 1150px) {
+  .site-hero {
+    &__content {
+      &_one {
+        background-image: url("../img/pictures/home-hero-one-1024.jpg");
+      }
+
+      &_two {
+        background-image: url("../img/pictures/home-hero-two-1024.jpg");
+      }
+
+      &_three {
+        background-image: url("../img/pictures/home-hero-three-1024.jpg");
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .site-hero {
+    &__content {
+      &_one {
+        background-image: url("../img/pictures/home-hero-one-768.jpg");
+      }
+
+      &_two {
+        background-image: url("../img/pictures/home-hero-two-768.jpg");
+      }
+
+      &_three {
+        background-image: url("../img/pictures/home-hero-three-768.jpg");
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .site-hero {
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 75%;
+
+      &_mobile {
+        display: none;
+      }
+
+      &_desc {
+        display: flex;
+      }
+    }
+
+    &__content {
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      width: 75%;
+      font-size: clamp(20px, 6vw, 48px);
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .site-hero {
+    .container {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    &__button {
+      width: 92%;
+    }
+
+    &__slider {
+      min-height: 210px;
+    }
+
+    &__content {
+      padding-top: 30px;
+      padding-left: 15px;
+      min-height: 180px;
+    }
+
+    &__title {
+      line-height: 27px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 100px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    }
+
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@media (max-width: 600px) {
+  .title-content {
+    font-size: $primaryFontSize;
+  }
+
+  .text-cooperation {
+    font-size: $fourthFontSize;
+  }
+
+  .site-cooperation {
+    &__breadcrumb {
+      padding-top: 0;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__title {
+      font-size: $seventhFontSize;
+    }
+  }
+
+  .cooperation-what {
+    &__item {
+      &_three {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .cooperation-benefits {
+    &__title {
+      font-size: $fourthFontSize;
+    }
+
+    &__item {
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .cooperation-guarantees {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+
+  .cooperation-term {
+    min-height: 72px;
+    background-position: center left;
+    background-size: 36px 54px;
+
+    &__text {
+      padding-left: 52px;
+      font-size: $primaryFontSize;
+    }
+  }
+}

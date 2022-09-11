@@ -1,0 +1,38 @@
+<div class="product-window" id="buy-product-dialog-window" role="dialog" tabindex="-1" aria-modal="true" aria-hidden="true">
+  <div class="product-window__overlay" data-a11y-dialog-hide></div>
+  <div class="product-window__content" role="document">
+    <button class="window-close product-window__close" type="button" aria-label="Закрыть диалоговое окно" data-a11y-dialog-hide>
+      <span class="window-close__inner">
+        <svg class="window-close__icon" width="20" height="20" aria-hidden="true">
+          <use xlink:href="img/sprites/sprite.svg#modal-close" />
+        </svg>
+      </span>
+    </button>
+    <h2 class="product-window__title">
+      Купить в&nbsp;один клик
+    </h2>
+    <p class="product-window__description">
+      Чтобы оформить заказ&nbsp;&mdash; заполните формы ниже и&nbsp;наш менеджер свяжется с&nbsp;вами в&nbsp;течении часа.
+    </p>
+    <form class="product-window__form" name="buyProductForm" action="#" method="get">
+      <div class="product-window__inner">
+        <input class="product-window__field product-window__name" type="text" name="FormName" placeholder="Как вас зовут?" translate="no" autocapitalize="on" autocomplete="name" spellcheck="false" aria-label="Введите ваше имя" required>
+      </div>
+      <div class="product-window__inner">
+        <input class="product-window__field product-window__phone" type="tel" name="FormPhone" placeholder="Ваш телефон" translate="no" autocapitalize="off" autocomplete="tel" spellcheck="false" aria-label="Введите номер вашего телефона" required>
+      </div>
+      <button class="button-primary product-window__button" type="submit">
+        Отправить
+      </button>
+      <div class="window-checkbox product-window__checkbox">
+        <input class="product-window__field window-checkbox__field" id="product-window-checkbox-field" type="checkbox" name="ProductCheckbox" value="yes" checked required>
+        <label class="window-checkbox__text" for="product-window-checkbox-field">
+          Принимаю
+          <a class="window-checkbox__link" href="#no-scrolling">
+            пользовательское соглашение
+          </a>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
