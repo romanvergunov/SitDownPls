@@ -19,7 +19,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 5px;
+    padding-right: 5px;
     font-weight: $regularFontWeight;
     font-size: $fourthFontSize;
     line-height: 100%;
@@ -28,7 +29,6 @@
     &:not(:last-child)::after {
       content: "";
       position: absolute;
-      left: 60px;
       right: 0;
       top: 3px;
       bottom: 0;
