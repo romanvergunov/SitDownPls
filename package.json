@@ -11,8 +11,8 @@
     "watch": "gulp watch",
     "dev": "gulp build",
     "prod": "gulp build --prod",
-    "maxgraph": "gulp specialForMaxgraph",
-    "start": "npm i && npm un gulp-libsquoosh && npm i -D gulp-libsquoosh@1.0.12 && npm run maxgraph"
+    "full": "gulp full",
+    "start": "npm i && npm un gulp-libsquoosh && npm i -D gulp-libsquoosh@1.0.12 && npm run full"
   },
   "author": "romanvergunov",
   "license": "MIT",

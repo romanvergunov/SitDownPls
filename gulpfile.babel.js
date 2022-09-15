@@ -44,7 +44,7 @@ const watch = series(
   fileWatch,
 );
 
-const specialForMaxgraph = series(
+const full = series(
   build,
   sprites,
   picturesJpg,
@@ -55,4 +55,4 @@ const specialForMaxgraph = series(
 
 exports.build = build;
 exports.watch = watch;
-exports.specialForMaxgraph = specialForMaxgraph;
+exports.full = full;

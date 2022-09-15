@@ -35,7 +35,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 730px) {
   .site-hero {
     &__button {
       display: flex;
@@ -54,6 +54,9 @@
 
     &__content {
       margin-bottom: 32px;
+      padding-bottom: 30px;
+      height: auto;
+      min-height: 290px;
     }
 
     &__title {
@@ -88,7 +91,6 @@
     &__content {
       padding-top: 30px;
       padding-left: 15px;
-      min-height: 180px;
     }
 
     &__title {
