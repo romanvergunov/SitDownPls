@@ -43,6 +43,8 @@
   <!-- SITE FOOTER -->
 @include('html/components/_footer.html')
 @include('html/components/_modal.html')
+<div id="hellopreloader" class="hellopreloader"></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
 <script src="js/main.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 </body>

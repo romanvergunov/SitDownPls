@@ -1,3 +1,16 @@
+.hellopreloader {
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $primaryColor url(http://hello-site.ru//main/images/preloads/grid.svg) center center no-repeat;
+  background-size:73px;
+  background-position: center;
+}
+
 .body {
   min-width: 320px;
   font-family: "Open Sans", sans-serif;
